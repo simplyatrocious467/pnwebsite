@@ -1,0 +1,225 @@
+﻿<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Item.Type - hMod Alpha 1.1.2</title><link rel="stylesheet" href="stylesheet.css"></head><body><div class="layout"><aside><a class="brand" href="index.html">hMod API</a><div class="version">Alpha 1.1.2</div>
+<input id="filter" type="search" placeholder="Filter API classes...">
+<a class="class-link" href="hooks.html">Hook reference</a>
+<div class="nav-title">Plugin-facing API (54)</div><a class="class-link" data-name="ban" href="Ban.html">Ban</a>
+<a class="class-link" data-name="bansystem" href="BanSystem.html">BanSystem</a>
+<a class="class-link" data-name="baseentity" href="BaseEntity.html">BaseEntity</a>
+<a class="class-link" data-name="basevehicle" href="BaseVehicle.html">BaseVehicle</a>
+<a class="class-link" data-name="block" href="Block.html">Block</a>
+<a class="class-link" data-name="block.face" href="Block.Face.html">Block.Face</a>
+<a class="class-link" data-name="block.type" href="Block.Type.html">Block.Type</a>
+<a class="class-link" data-name="blockaction" href="BlockAction.html">BlockAction</a>
+<a class="class-link" data-name="blockstairs" href="BlockStairs.html">BlockStairs</a>
+<a class="class-link" data-name="chest" href="Chest.html">Chest</a>
+<a class="class-link" data-name="chunk" href="Chunk.html">Chunk</a>
+<a class="class-link" data-name="colors" href="Colors.html">Colors</a>
+<a class="class-link" data-name="complexblock" href="ComplexBlock.html">ComplexBlock</a>
+<a class="class-link" data-name="datasource" href="DataSource.html">DataSource</a>
+<a class="class-link" data-name="delayedtask" href="DelayedTask.html">DelayedTask</a>
+<a class="class-link" data-name="enumcreaturetype" href="EnumCreatureType.html">EnumCreatureType</a>
+<a class="class-link" data-name="flatfilesource" href="FlatFileSource.html">FlatFileSource</a>
+<a class="class-link" data-name="furnace" href="Furnace.html">Furnace</a>
+<a class="class-link" data-name="group" href="Group.html">Group</a>
+<a class="class-link" data-name="hitblox" href="HitBlox.html">HitBlox</a>
+<a class="class-link" data-name="humanentity" href="HumanEntity.html">HumanEntity</a>
+<a class="class-link" data-name="inventory" href="Inventory.html">Inventory</a>
+<a class="class-link" data-name="inventory.type" href="Inventory.Type.html">Inventory.Type</a>
+<a class="class-link" data-name="item" href="Item.html">Item</a>
+<a class="class-link" data-name="item.type" href="Item.Type.html">Item.Type</a>
+<a class="class-link" data-name="itemarray" href="ItemArray.html">ItemArray</a>
+<a class="class-link" data-name="itementity" href="ItemEntity.html">ItemEntity</a>
+<a class="class-link" data-name="kit" href="Kit.html">Kit</a>
+<a class="class-link" data-name="livingentity" href="LivingEntity.html">LivingEntity</a>
+<a class="class-link" data-name="location" href="Location.html">Location</a>
+<a class="class-link" data-name="main" href="Main.html">Main</a>
+<a class="class-link" data-name="minecart" href="Minecart.html">Minecart</a>
+<a class="class-link" data-name="minecart.type" href="Minecart.Type.html">Minecart.Type</a>
+<a class="class-link" data-name="mob" href="Mob.html">Mob</a>
+<a class="class-link" data-name="mobspawner" href="MobSpawner.html">MobSpawner</a>
+<a class="class-link" data-name="myclassloader" href="MyClassLoader.html">MyClassLoader</a>
+<a class="class-link" data-name="mysqlsource" href="MySQLSource.html">MySQLSource</a>
+<a class="class-link" data-name="player" href="Player.html">Player</a>
+<a class="class-link" data-name="plugin" href="Plugin.html">Plugin</a>
+<a class="class-link" data-name="plugininterface" href="PluginInterface.html">PluginInterface</a>
+<a class="class-link" data-name="pluginlistener" href="PluginListener.html">PluginListener</a>
+<a class="class-link" data-name="pluginlistener.priority" href="PluginListener.Priority.html">PluginListener.Priority</a>
+<a class="class-link" data-name="pluginloader" href="PluginLoader.html">PluginLoader</a>
+<a class="class-link" data-name="pluginloader.hook" href="PluginLoader.Hook.html">PluginLoader.Hook</a>
+<a class="class-link" data-name="pluginloader.hookresult" href="PluginLoader.HookResult.html">PluginLoader.HookResult</a>
+<a class="class-link" data-name="pluginregisteredlistener" href="PluginRegisteredListener.html">PluginRegisteredListener</a>
+<a class="class-link" data-name="propertiesfile" href="PropertiesFile.html">PropertiesFile</a>
+<a class="class-link" data-name="server" href="Server.html">Server</a>
+<a class="class-link" data-name="sign" href="Sign.html">Sign</a>
+<a class="class-link" data-name="slime" href="Slime.html">Slime</a>
+<a class="class-link" data-name="texthelper" href="TextHelper.html">TextHelper</a>
+<a class="class-link" data-name="threadpreloginchecks" href="ThreadPreLoginChecks.html">ThreadPreLoginChecks</a>
+<a class="class-link" data-name="warp" href="Warp.html">Warp</a>
+<a class="class-link" data-name="wrappedtask" href="WrappedTask.html">WrappedTask</a></aside><main><div class="eyebrow">enum</div><h1>Item.Type</h1><div class="signature">public final class Item$Type extends java.lang.Enum&lt;Item$Type&gt; {</div><h2>Public members</h2><div class="member"><code>public static final Item$Type Air;</code></div>
+<div class="member"><code>public static final Item$Type Stone;</code></div>
+<div class="member"><code>public static final Item$Type Grass;</code></div>
+<div class="member"><code>public static final Item$Type Dirt;</code></div>
+<div class="member"><code>public static final Item$Type Cobblestone;</code></div>
+<div class="member"><code>public static final Item$Type Wood;</code></div>
+<div class="member"><code>public static final Item$Type Sapling;</code></div>
+<div class="member"><code>public static final Item$Type Bedrock;</code></div>
+<div class="member"><code>public static final Item$Type Water;</code></div>
+<div class="member"><code>public static final Item$Type StationaryWater;</code></div>
+<div class="member"><code>public static final Item$Type Lava;</code></div>
+<div class="member"><code>public static final Item$Type StationaryLava;</code></div>
+<div class="member"><code>public static final Item$Type Sand;</code></div>
+<div class="member"><code>public static final Item$Type Gravel;</code></div>
+<div class="member"><code>public static final Item$Type GoldOre;</code></div>
+<div class="member"><code>public static final Item$Type IronOre;</code></div>
+<div class="member"><code>public static final Item$Type CoalOre;</code></div>
+<div class="member"><code>public static final Item$Type Log;</code></div>
+<div class="member"><code>public static final Item$Type Leaves;</code></div>
+<div class="member"><code>public static final Item$Type Sponge;</code></div>
+<div class="member"><code>public static final Item$Type Glass;</code></div>
+<div class="member"><code>public static final Item$Type Cloth;</code></div>
+<div class="member"><code>public static final Item$Type YellowFlower;</code></div>
+<div class="member"><code>public static final Item$Type RedRose;</code></div>
+<div class="member"><code>public static final Item$Type BrownMushroom;</code></div>
+<div class="member"><code>public static final Item$Type RedMushroom;</code></div>
+<div class="member"><code>public static final Item$Type GoldBlock;</code></div>
+<div class="member"><code>public static final Item$Type IronBlock;</code></div>
+<div class="member"><code>public static final Item$Type DoubleStep;</code></div>
+<div class="member"><code>public static final Item$Type Step;</code></div>
+<div class="member"><code>public static final Item$Type Brick;</code></div>
+<div class="member"><code>public static final Item$Type TNT;</code></div>
+<div class="member"><code>public static final Item$Type BookShelf;</code></div>
+<div class="member"><code>public static final Item$Type MossyCobblestone;</code></div>
+<div class="member"><code>public static final Item$Type Obsidian;</code></div>
+<div class="member"><code>public static final Item$Type Torch;</code></div>
+<div class="member"><code>public static final Item$Type Fire;</code></div>
+<div class="member"><code>public static final Item$Type MobSpawner;</code></div>
+<div class="member"><code>public static final Item$Type WoodStairs;</code></div>
+<div class="member"><code>public static final Item$Type Chest;</code></div>
+<div class="member"><code>public static final Item$Type RedstoneWire;</code></div>
+<div class="member"><code>public static final Item$Type DiamondOre;</code></div>
+<div class="member"><code>public static final Item$Type DiamondBlock;</code></div>
+<div class="member"><code>public static final Item$Type Workbench;</code></div>
+<div class="member"><code>public static final Item$Type Crops;</code></div>
+<div class="member"><code>public static final Item$Type Soil;</code></div>
+<div class="member"><code>public static final Item$Type Furnace;</code></div>
+<div class="member"><code>public static final Item$Type BurningFurnace;</code></div>
+<div class="member"><code>public static final Item$Type SignPost;</code></div>
+<div class="member"><code>public static final Item$Type WoodenDoor;</code></div>
+<div class="member"><code>public static final Item$Type Ladder;</code></div>
+<div class="member"><code>public static final Item$Type Rails;</code></div>
+<div class="member"><code>public static final Item$Type CobblestoneStairs;</code></div>
+<div class="member"><code>public static final Item$Type WallSign;</code></div>
+<div class="member"><code>public static final Item$Type Lever;</code></div>
+<div class="member"><code>public static final Item$Type StonePlate;</code></div>
+<div class="member"><code>public static final Item$Type IronDoorBlock;</code></div>
+<div class="member"><code>public static final Item$Type WoodPlate;</code></div>
+<div class="member"><code>public static final Item$Type RedstoneOre;</code></div>
+<div class="member"><code>public static final Item$Type GlowingRedstoneOre;</code></div>
+<div class="member"><code>public static final Item$Type RedstoneTorchOff;</code></div>
+<div class="member"><code>public static final Item$Type RedstoneTorchOn;</code></div>
+<div class="member"><code>public static final Item$Type StoneButton;</code></div>
+<div class="member"><code>public static final Item$Type Snow;</code></div>
+<div class="member"><code>public static final Item$Type Ice;</code></div>
+<div class="member"><code>public static final Item$Type SnowBlock;</code></div>
+<div class="member"><code>public static final Item$Type Cactus;</code></div>
+<div class="member"><code>public static final Item$Type Clay;</code></div>
+<div class="member"><code>public static final Item$Type ReedBlock;</code></div>
+<div class="member"><code>public static final Item$Type Jukebox;</code></div>
+<div class="member"><code>public static final Item$Type Fence;</code></div>
+<div class="member"><code>public static final Item$Type Portal;</code></div>
+<div class="member"><code>public static final Item$Type IronSpade;</code></div>
+<div class="member"><code>public static final Item$Type IronPickaxe;</code></div>
+<div class="member"><code>public static final Item$Type IronAxe;</code></div>
+<div class="member"><code>public static final Item$Type FlintAndSteel;</code></div>
+<div class="member"><code>public static final Item$Type Apple;</code></div>
+<div class="member"><code>public static final Item$Type Bow;</code></div>
+<div class="member"><code>public static final Item$Type Arrow;</code></div>
+<div class="member"><code>public static final Item$Type Coal;</code></div>
+<div class="member"><code>public static final Item$Type Diamond;</code></div>
+<div class="member"><code>public static final Item$Type IronIngot;</code></div>
+<div class="member"><code>public static final Item$Type GoldIngot;</code></div>
+<div class="member"><code>public static final Item$Type IronSword;</code></div>
+<div class="member"><code>public static final Item$Type WoodSword;</code></div>
+<div class="member"><code>public static final Item$Type WoodSpade;</code></div>
+<div class="member"><code>public static final Item$Type WoodPickaxe;</code></div>
+<div class="member"><code>public static final Item$Type WoodAxe;</code></div>
+<div class="member"><code>public static final Item$Type StoneSword;</code></div>
+<div class="member"><code>public static final Item$Type StoneSpade;</code></div>
+<div class="member"><code>public static final Item$Type StonePickaxe;</code></div>
+<div class="member"><code>public static final Item$Type StoneAxe;</code></div>
+<div class="member"><code>public static final Item$Type DiamondSword;</code></div>
+<div class="member"><code>public static final Item$Type DiamondSpade;</code></div>
+<div class="member"><code>public static final Item$Type DiamondPickaxe;</code></div>
+<div class="member"><code>public static final Item$Type DiamondAxe;</code></div>
+<div class="member"><code>public static final Item$Type Stick;</code></div>
+<div class="member"><code>public static final Item$Type Bowl;</code></div>
+<div class="member"><code>public static final Item$Type MushroomSoup;</code></div>
+<div class="member"><code>public static final Item$Type GoldSword;</code></div>
+<div class="member"><code>public static final Item$Type GoldSpade;</code></div>
+<div class="member"><code>public static final Item$Type GoldPickaxe;</code></div>
+<div class="member"><code>public static final Item$Type GoldAxe;</code></div>
+<div class="member"><code>public static final Item$Type String;</code></div>
+<div class="member"><code>public static final Item$Type Feather;</code></div>
+<div class="member"><code>public static final Item$Type Gunpowder;</code></div>
+<div class="member"><code>public static final Item$Type WoodHoe;</code></div>
+<div class="member"><code>public static final Item$Type StoneHoe;</code></div>
+<div class="member"><code>public static final Item$Type IronHoe;</code></div>
+<div class="member"><code>public static final Item$Type DiamondHoe;</code></div>
+<div class="member"><code>public static final Item$Type GoldHoe;</code></div>
+<div class="member"><code>public static final Item$Type Seeds;</code></div>
+<div class="member"><code>public static final Item$Type Wheat;</code></div>
+<div class="member"><code>public static final Item$Type Bread;</code></div>
+<div class="member"><code>public static final Item$Type LeatherHelmet;</code></div>
+<div class="member"><code>public static final Item$Type LeatherChestplate;</code></div>
+<div class="member"><code>public static final Item$Type LeatherLeggings;</code></div>
+<div class="member"><code>public static final Item$Type LeatherBoots;</code></div>
+<div class="member"><code>public static final Item$Type ChainmailHelmet;</code></div>
+<div class="member"><code>public static final Item$Type ChainmailChestplate;</code></div>
+<div class="member"><code>public static final Item$Type ChainmailLeggings;</code></div>
+<div class="member"><code>public static final Item$Type ChainmailBoots;</code></div>
+<div class="member"><code>public static final Item$Type IronHelmet;</code></div>
+<div class="member"><code>public static final Item$Type IronChestplate;</code></div>
+<div class="member"><code>public static final Item$Type IronLeggings;</code></div>
+<div class="member"><code>public static final Item$Type IronBoots;</code></div>
+<div class="member"><code>public static final Item$Type DiamondHelmet;</code></div>
+<div class="member"><code>public static final Item$Type DiamondChestplate;</code></div>
+<div class="member"><code>public static final Item$Type DiamondLeggings;</code></div>
+<div class="member"><code>public static final Item$Type DiamondBoots;</code></div>
+<div class="member"><code>public static final Item$Type GoldHelmet;</code></div>
+<div class="member"><code>public static final Item$Type GoldChestplate;</code></div>
+<div class="member"><code>public static final Item$Type GoldLeggings;</code></div>
+<div class="member"><code>public static final Item$Type GoldBoots;</code></div>
+<div class="member"><code>public static final Item$Type Flint;</code></div>
+<div class="member"><code>public static final Item$Type Pork;</code></div>
+<div class="member"><code>public static final Item$Type GrilledPork;</code></div>
+<div class="member"><code>public static final Item$Type Painting;</code></div>
+<div class="member"><code>public static final Item$Type GoldenApple;</code></div>
+<div class="member"><code>public static final Item$Type Sign;</code></div>
+<div class="member"><code>public static final Item$Type WoodDoor;</code></div>
+<div class="member"><code>public static final Item$Type Bucket;</code></div>
+<div class="member"><code>public static final Item$Type WaterBucket;</code></div>
+<div class="member"><code>public static final Item$Type LavaBucket;</code></div>
+<div class="member"><code>public static final Item$Type Minecart;</code></div>
+<div class="member"><code>public static final Item$Type Saddle;</code></div>
+<div class="member"><code>public static final Item$Type IronDoor;</code></div>
+<div class="member"><code>public static final Item$Type RedStone;</code></div>
+<div class="member"><code>public static final Item$Type SnowBall;</code></div>
+<div class="member"><code>public static final Item$Type Boat;</code></div>
+<div class="member"><code>public static final Item$Type Leather;</code></div>
+<div class="member"><code>public static final Item$Type MilkBucket;</code></div>
+<div class="member"><code>public static final Item$Type ClayBrick;</code></div>
+<div class="member"><code>public static final Item$Type ClayBall;</code></div>
+<div class="member"><code>public static final Item$Type Reed;</code></div>
+<div class="member"><code>public static final Item$Type Paper;</code></div>
+<div class="member"><code>public static final Item$Type Book;</code></div>
+<div class="member"><code>public static final Item$Type SlimeBall;</code></div>
+<div class="member"><code>public static final Item$Type StorageMinecart;</code></div>
+<div class="member"><code>public static final Item$Type PoweredMinecart;</code></div>
+<div class="member"><code>public static final Item$Type Egg;</code></div>
+<div class="member"><code>public static final Item$Type Compass;</code></div>
+<div class="member"><code>public static final Item$Type FishingRod;</code></div>
+<div class="member"><code>public static final Item$Type GoldRecord;</code></div>
+<div class="member"><code>public static final Item$Type GreenRecord;</code></div>
+<div class="member"><code>public int getId();</code></div>
+<div class="member"><code>public static Item$Type fromId(int);</code></div>
+<div class="member"><code>public static Item$Type[] values();</code></div>
+<div class="member"><code>public static Item$Type valueOf(java.lang.String);</code></div></main></div><script src="script.js"></script></body></html>

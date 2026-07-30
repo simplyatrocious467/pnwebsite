@@ -1,0 +1,158 @@
+﻿<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Hook reference - hMod Alpha 1.1.2</title><link rel="stylesheet" href="stylesheet.css"></head><body><div class="layout"><aside><a class="brand" href="index.html">hMod API</a><div class="version">Alpha 1.1.2</div>
+<input id="filter" type="search" placeholder="Filter API classes...">
+<a class="class-link" href="hooks.html">Hook reference</a>
+<div class="nav-title">Plugin-facing API (54)</div><a class="class-link" data-name="ban" href="Ban.html">Ban</a>
+<a class="class-link" data-name="bansystem" href="BanSystem.html">BanSystem</a>
+<a class="class-link" data-name="baseentity" href="BaseEntity.html">BaseEntity</a>
+<a class="class-link" data-name="basevehicle" href="BaseVehicle.html">BaseVehicle</a>
+<a class="class-link" data-name="block" href="Block.html">Block</a>
+<a class="class-link" data-name="block.face" href="Block.Face.html">Block.Face</a>
+<a class="class-link" data-name="block.type" href="Block.Type.html">Block.Type</a>
+<a class="class-link" data-name="blockaction" href="BlockAction.html">BlockAction</a>
+<a class="class-link" data-name="blockstairs" href="BlockStairs.html">BlockStairs</a>
+<a class="class-link" data-name="chest" href="Chest.html">Chest</a>
+<a class="class-link" data-name="chunk" href="Chunk.html">Chunk</a>
+<a class="class-link" data-name="colors" href="Colors.html">Colors</a>
+<a class="class-link" data-name="complexblock" href="ComplexBlock.html">ComplexBlock</a>
+<a class="class-link" data-name="datasource" href="DataSource.html">DataSource</a>
+<a class="class-link" data-name="delayedtask" href="DelayedTask.html">DelayedTask</a>
+<a class="class-link" data-name="enumcreaturetype" href="EnumCreatureType.html">EnumCreatureType</a>
+<a class="class-link" data-name="flatfilesource" href="FlatFileSource.html">FlatFileSource</a>
+<a class="class-link" data-name="furnace" href="Furnace.html">Furnace</a>
+<a class="class-link" data-name="group" href="Group.html">Group</a>
+<a class="class-link" data-name="hitblox" href="HitBlox.html">HitBlox</a>
+<a class="class-link" data-name="humanentity" href="HumanEntity.html">HumanEntity</a>
+<a class="class-link" data-name="inventory" href="Inventory.html">Inventory</a>
+<a class="class-link" data-name="inventory.type" href="Inventory.Type.html">Inventory.Type</a>
+<a class="class-link" data-name="item" href="Item.html">Item</a>
+<a class="class-link" data-name="item.type" href="Item.Type.html">Item.Type</a>
+<a class="class-link" data-name="itemarray" href="ItemArray.html">ItemArray</a>
+<a class="class-link" data-name="itementity" href="ItemEntity.html">ItemEntity</a>
+<a class="class-link" data-name="kit" href="Kit.html">Kit</a>
+<a class="class-link" data-name="livingentity" href="LivingEntity.html">LivingEntity</a>
+<a class="class-link" data-name="location" href="Location.html">Location</a>
+<a class="class-link" data-name="main" href="Main.html">Main</a>
+<a class="class-link" data-name="minecart" href="Minecart.html">Minecart</a>
+<a class="class-link" data-name="minecart.type" href="Minecart.Type.html">Minecart.Type</a>
+<a class="class-link" data-name="mob" href="Mob.html">Mob</a>
+<a class="class-link" data-name="mobspawner" href="MobSpawner.html">MobSpawner</a>
+<a class="class-link" data-name="myclassloader" href="MyClassLoader.html">MyClassLoader</a>
+<a class="class-link" data-name="mysqlsource" href="MySQLSource.html">MySQLSource</a>
+<a class="class-link" data-name="player" href="Player.html">Player</a>
+<a class="class-link" data-name="plugin" href="Plugin.html">Plugin</a>
+<a class="class-link" data-name="plugininterface" href="PluginInterface.html">PluginInterface</a>
+<a class="class-link" data-name="pluginlistener" href="PluginListener.html">PluginListener</a>
+<a class="class-link" data-name="pluginlistener.priority" href="PluginListener.Priority.html">PluginListener.Priority</a>
+<a class="class-link" data-name="pluginloader" href="PluginLoader.html">PluginLoader</a>
+<a class="class-link" data-name="pluginloader.hook" href="PluginLoader.Hook.html">PluginLoader.Hook</a>
+<a class="class-link" data-name="pluginloader.hookresult" href="PluginLoader.HookResult.html">PluginLoader.HookResult</a>
+<a class="class-link" data-name="pluginregisteredlistener" href="PluginRegisteredListener.html">PluginRegisteredListener</a>
+<a class="class-link" data-name="propertiesfile" href="PropertiesFile.html">PropertiesFile</a>
+<a class="class-link" data-name="server" href="Server.html">Server</a>
+<a class="class-link" data-name="sign" href="Sign.html">Sign</a>
+<a class="class-link" data-name="slime" href="Slime.html">Slime</a>
+<a class="class-link" data-name="texthelper" href="TextHelper.html">TextHelper</a>
+<a class="class-link" data-name="threadpreloginchecks" href="ThreadPreLoginChecks.html">ThreadPreLoginChecks</a>
+<a class="class-link" data-name="warp" href="Warp.html">Warp</a>
+<a class="class-link" data-name="wrappedtask" href="WrappedTask.html">WrappedTask</a></aside><main><div class="eyebrow">Event system</div><h1>Hook reference</h1>
+<p class="lead">These hook names and listener callback signatures come directly from this Alpha 1.1.2 JAR. Register listeners through <a href="PluginLoader.html">PluginLoader</a> using a <a href="PluginListener.Priority.html">priority</a>.</p>
+<h2>Hook constants (50)</h2><div class="member" id="LOGINCHECK"><code>LOGINCHECK</code></div>
+<div class="member" id="LOGIN"><code>LOGIN</code></div>
+<div class="member" id="PRELOGINCHECK"><code>PRELOGINCHECK</code></div>
+<div class="member" id="CHAT"><code>CHAT</code></div>
+<div class="member" id="COMMAND"><code>COMMAND</code></div>
+<div class="member" id="COMMAND_CHECK"><code>COMMAND_CHECK</code></div>
+<div class="member" id="SERVERCOMMAND"><code>SERVERCOMMAND</code></div>
+<div class="member" id="BAN"><code>BAN</code></div>
+<div class="member" id="IPBAN"><code>IPBAN</code></div>
+<div class="member" id="KICK"><code>KICK</code></div>
+<div class="member" id="BLOCK_CREATED"><code>BLOCK_CREATED</code></div>
+<div class="member" id="BLOCK_DESTROYED"><code>BLOCK_DESTROYED</code></div>
+<div class="member" id="CHUNK_CREATE"><code>CHUNK_CREATE</code></div>
+<div class="member" id="CHUNK_CREATED"><code>CHUNK_CREATED</code></div>
+<div class="member" id="CHUNK_LOADED"><code>CHUNK_LOADED</code></div>
+<div class="member" id="DISCONNECT"><code>DISCONNECT</code></div>
+<div class="member" id="PLAYER_MOVE"><code>PLAYER_MOVE</code></div>
+<div class="member" id="ARM_SWING"><code>ARM_SWING</code></div>
+<div class="member" id="COMPLEX_BLOCK_CHANGE"><code>COMPLEX_BLOCK_CHANGE</code></div>
+<div class="member" id="INVENTORY_CHANGE"><code>INVENTORY_CHANGE</code></div>
+<div class="member" id="CRAFTINVENTORY_CHANGE"><code>CRAFTINVENTORY_CHANGE</code></div>
+<div class="member" id="EQUIPMENT_CHANGE"><code>EQUIPMENT_CHANGE</code></div>
+<div class="member" id="COMPLEX_BLOCK_SEND"><code>COMPLEX_BLOCK_SEND</code></div>
+<div class="member" id="TELEPORT"><code>TELEPORT</code></div>
+<div class="member" id="ITEM_DROP"><code>ITEM_DROP</code></div>
+<div class="member" id="ITEM_PICK_UP"><code>ITEM_PICK_UP</code></div>
+<div class="member" id="REDSTONE_CHANGE"><code>REDSTONE_CHANGE</code></div>
+<div class="member" id="INTERACT"><code>INTERACT</code></div>
+<div class="member" id="FLOW"><code>FLOW</code></div>
+<div class="member" id="IGNITE"><code>IGNITE</code></div>
+<div class="member" id="BLOCK_BROKEN"><code>BLOCK_BROKEN</code></div>
+<div class="member" id="MOB_SPAWN"><code>MOB_SPAWN</code></div>
+<div class="member" id="BLOCK_PLACE"><code>BLOCK_PLACE</code></div>
+<div class="member" id="BLOCK_PHYSICS"><code>BLOCK_PHYSICS</code></div>
+<div class="member" id="BLOCK_LANDED"><code>BLOCK_LANDED</code></div>
+<div class="member" id="VEHICLE_CREATE"><code>VEHICLE_CREATE</code></div>
+<div class="member" id="VEHICLE_UPDATE"><code>VEHICLE_UPDATE</code></div>
+<div class="member" id="VEHICLE_DAMAGE"><code>VEHICLE_DAMAGE</code></div>
+<div class="member" id="VEHICLE_COLLISION"><code>VEHICLE_COLLISION</code></div>
+<div class="member" id="VEHICLE_DESTROYED"><code>VEHICLE_DESTROYED</code></div>
+<div class="member" id="VEHICLE_ENTERED"><code>VEHICLE_ENTERED</code></div>
+<div class="member" id="VEHICLE_POSITIONCHANGE"><code>VEHICLE_POSITIONCHANGE</code></div>
+<div class="member" id="ITEM_USE"><code>ITEM_USE</code></div>
+<div class="member" id="EXPLODE_BLOCKS"><code>EXPLODE_BLOCKS</code></div>
+<div class="member" id="EXPLODE"><code>EXPLODE</code></div>
+<div class="member" id="BLOCK_RIGHTCLICKED"><code>BLOCK_RIGHTCLICKED</code></div>
+<div class="member" id="INVENTORY_UPDATE"><code>INVENTORY_UPDATE</code></div>
+<div class="member" id="CRAFTINVENTORY_UPDATE"><code>CRAFTINVENTORY_UPDATE</code></div>
+<div class="member" id="EQUIPMENT_UPDATE"><code>EQUIPMENT_UPDATE</code></div>
+<div class="member" id="NUM_HOOKS"><code>NUM_HOOKS</code></div>
+<h2>Listener callbacks</h2><p class="muted">Override the matching method in your <code>PluginListener</code> subclass. Boolean-returning callbacks commonly use the return value to allow or cancel an action; verify behavior in a test server for callbacks lacking source comments.</p><div class="member"><code>public PluginListener();</code></div>
+<div class="member"><code>public void onPlayerMove(Player, Location, Location);</code></div>
+<div class="member"><code>public boolean onTeleport(Player, Location, Location);</code></div>
+<div class="member"><code>public java.lang.String onLoginChecks(java.lang.String);</code></div>
+<div class="member"><code>public boolean onBlockLanded(Block, Block);</code></div>
+<div class="member"><code>public void onLogin(Player);</code></div>
+<div class="member"><code>public java.lang.String onPreLoginChecks(java.lang.String, java.lang.String);</code></div>
+<div class="member"><code>public void onDisconnect(Player);</code></div>
+<div class="member"><code>public boolean onChat(Player, java.lang.String);</code></div>
+<div class="member"><code>public boolean onCommand(Player, java.lang.String[]);</code></div>
+<div class="member"><code>public boolean onConsoleCommand(java.lang.String[]);</code></div>
+<div class="member"><code>public void onBan(Player, Player, java.lang.String);</code></div>
+<div class="member"><code>public void onIpBan(Player, Player, java.lang.String);</code></div>
+<div class="member"><code>public void onKick(Player, Player, java.lang.String);</code></div>
+<div class="member"><code>public boolean onBlockCreate(Player, Block, Block, int);</code></div>
+<div class="member"><code>public boolean onBlockDestroy(Player, Block);</code></div>
+<div class="member"><code>public void onArmSwing(Player);</code></div>
+<div class="member"><code>public boolean onItemDrop(Player, Item);</code></div>
+<div class="member"><code>public boolean onItemPickUp(Player, Item);</code></div>
+<div class="member"><code>public boolean onFlow(Block, Block);</code></div>
+<div class="member"><code>public boolean onInventoryChange(Player);</code></div>
+<div class="member"><code>public boolean onCraftInventoryChange(Player);</code></div>
+<div class="member"><code>public boolean onEquipmentChange(Player);</code></div>
+<div class="member"><code>public void onInventoryUpdate(Player, Item[]);</code></div>
+<div class="member"><code>public void onCraftInventoryUpdate(Player, Item[]);</code></div>
+<div class="member"><code>public void onEquipmentUpdate(Player, Item[]);</code></div>
+<div class="member"><code>public boolean onComplexBlockChange(Player, ComplexBlock);</code></div>
+<div class="member"><code>public boolean onSendComplexBlock(Player, ComplexBlock);</code></div>
+<div class="member"><code>public boolean onIgnite(Block);</code></div>
+<div class="member"><code>public boolean onBlockBreak(Player, Block);</code></div>
+<div class="member"><code>public boolean onMobSpawn(LivingEntity);</code></div>
+<div class="member"><code>public boolean onBlockPlace(Player, Block, Block, Item);</code></div>
+<div class="member"><code>public boolean onItemUse(Player, Block, Block, Item);</code></div>
+<div class="member"><code>public void onBlocksExploded(Block[]);</code></div>
+<div class="member"><code>public boolean onExplode(Block);</code></div>
+<div class="member"><code>public void onBlockRightClicked(Player, Block, Item);</code></div>
+<div class="member"><code>public PluginLoader$HookResult onCanPlayerUseCommand(Player, java.lang.String);</code></div>
+<div class="member"><code>public byte[] onChunkCreate(int, int);</code></div>
+<div class="member"><code>public void onChunkCreated(Chunk);</code></div>
+<div class="member"><code>public void onChunkLoaded(Chunk);</code></div>
+<div class="member"><code>public int onRedstoneChange(Block, int, int);</code></div>
+<div class="member"><code>public boolean onInteract(Player, Block);</code></div>
+<div class="member"><code>public boolean onBlockPhysics(Block, boolean);</code></div>
+<div class="member"><code>public void onVehicleCreate(BaseVehicle);</code></div>
+<div class="member"><code>public boolean onVehicleDamage(BaseVehicle, BaseEntity, int);</code></div>
+<div class="member"><code>public void onVehicleUpdate(BaseVehicle);</code></div>
+<div class="member"><code>public java.lang.Boolean onVehicleCollision(BaseVehicle, BaseEntity);</code></div>
+<div class="member"><code>public void onVehicleDestroyed(BaseVehicle);</code></div>
+<div class="member"><code>public void onVehicleEnter(BaseVehicle, HumanEntity);</code></div>
+<div class="member"><code>public void onVehiclePositionChange(BaseVehicle, int, int, int);</code></div></main></div><script src="script.js"></script></body></html>

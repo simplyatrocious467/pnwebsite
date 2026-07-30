@@ -1,0 +1,114 @@
+﻿<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>API overview - hMod Alpha 1.1.2</title><link rel="stylesheet" href="stylesheet.css"></head><body><div class="layout"><aside><a class="brand" href="index.html">hMod API</a><div class="version">Alpha 1.1.2</div>
+<input id="filter" type="search" placeholder="Filter API classes...">
+<a class="class-link" href="hooks.html">Hook reference</a>
+<div class="nav-title">Plugin-facing API (54)</div><a class="class-link" data-name="ban" href="Ban.html">Ban</a>
+<a class="class-link" data-name="bansystem" href="BanSystem.html">BanSystem</a>
+<a class="class-link" data-name="baseentity" href="BaseEntity.html">BaseEntity</a>
+<a class="class-link" data-name="basevehicle" href="BaseVehicle.html">BaseVehicle</a>
+<a class="class-link" data-name="block" href="Block.html">Block</a>
+<a class="class-link" data-name="block.face" href="Block.Face.html">Block.Face</a>
+<a class="class-link" data-name="block.type" href="Block.Type.html">Block.Type</a>
+<a class="class-link" data-name="blockaction" href="BlockAction.html">BlockAction</a>
+<a class="class-link" data-name="blockstairs" href="BlockStairs.html">BlockStairs</a>
+<a class="class-link" data-name="chest" href="Chest.html">Chest</a>
+<a class="class-link" data-name="chunk" href="Chunk.html">Chunk</a>
+<a class="class-link" data-name="colors" href="Colors.html">Colors</a>
+<a class="class-link" data-name="complexblock" href="ComplexBlock.html">ComplexBlock</a>
+<a class="class-link" data-name="datasource" href="DataSource.html">DataSource</a>
+<a class="class-link" data-name="delayedtask" href="DelayedTask.html">DelayedTask</a>
+<a class="class-link" data-name="enumcreaturetype" href="EnumCreatureType.html">EnumCreatureType</a>
+<a class="class-link" data-name="flatfilesource" href="FlatFileSource.html">FlatFileSource</a>
+<a class="class-link" data-name="furnace" href="Furnace.html">Furnace</a>
+<a class="class-link" data-name="group" href="Group.html">Group</a>
+<a class="class-link" data-name="hitblox" href="HitBlox.html">HitBlox</a>
+<a class="class-link" data-name="humanentity" href="HumanEntity.html">HumanEntity</a>
+<a class="class-link" data-name="inventory" href="Inventory.html">Inventory</a>
+<a class="class-link" data-name="inventory.type" href="Inventory.Type.html">Inventory.Type</a>
+<a class="class-link" data-name="item" href="Item.html">Item</a>
+<a class="class-link" data-name="item.type" href="Item.Type.html">Item.Type</a>
+<a class="class-link" data-name="itemarray" href="ItemArray.html">ItemArray</a>
+<a class="class-link" data-name="itementity" href="ItemEntity.html">ItemEntity</a>
+<a class="class-link" data-name="kit" href="Kit.html">Kit</a>
+<a class="class-link" data-name="livingentity" href="LivingEntity.html">LivingEntity</a>
+<a class="class-link" data-name="location" href="Location.html">Location</a>
+<a class="class-link" data-name="main" href="Main.html">Main</a>
+<a class="class-link" data-name="minecart" href="Minecart.html">Minecart</a>
+<a class="class-link" data-name="minecart.type" href="Minecart.Type.html">Minecart.Type</a>
+<a class="class-link" data-name="mob" href="Mob.html">Mob</a>
+<a class="class-link" data-name="mobspawner" href="MobSpawner.html">MobSpawner</a>
+<a class="class-link" data-name="myclassloader" href="MyClassLoader.html">MyClassLoader</a>
+<a class="class-link" data-name="mysqlsource" href="MySQLSource.html">MySQLSource</a>
+<a class="class-link" data-name="player" href="Player.html">Player</a>
+<a class="class-link" data-name="plugin" href="Plugin.html">Plugin</a>
+<a class="class-link" data-name="plugininterface" href="PluginInterface.html">PluginInterface</a>
+<a class="class-link" data-name="pluginlistener" href="PluginListener.html">PluginListener</a>
+<a class="class-link" data-name="pluginlistener.priority" href="PluginListener.Priority.html">PluginListener.Priority</a>
+<a class="class-link" data-name="pluginloader" href="PluginLoader.html">PluginLoader</a>
+<a class="class-link" data-name="pluginloader.hook" href="PluginLoader.Hook.html">PluginLoader.Hook</a>
+<a class="class-link" data-name="pluginloader.hookresult" href="PluginLoader.HookResult.html">PluginLoader.HookResult</a>
+<a class="class-link" data-name="pluginregisteredlistener" href="PluginRegisteredListener.html">PluginRegisteredListener</a>
+<a class="class-link" data-name="propertiesfile" href="PropertiesFile.html">PropertiesFile</a>
+<a class="class-link" data-name="server" href="Server.html">Server</a>
+<a class="class-link" data-name="sign" href="Sign.html">Sign</a>
+<a class="class-link" data-name="slime" href="Slime.html">Slime</a>
+<a class="class-link" data-name="texthelper" href="TextHelper.html">TextHelper</a>
+<a class="class-link" data-name="threadpreloginchecks" href="ThreadPreLoginChecks.html">ThreadPreLoginChecks</a>
+<a class="class-link" data-name="warp" href="Warp.html">Warp</a>
+<a class="class-link" data-name="wrappedtask" href="WrappedTask.html">WrappedTask</a></aside><main><div class="eyebrow">API Documentation</div><h1>hMod for Minecraft Alpha 1.1.2</h1>
+<p class="lead">Reference documentation for the hMod Alpha 1.1.2 plugin API.</p>
+<div class="notice"><strong>Note:</strong> The original parameter names and source comments are not available. Method parameters are therefore shown by type.</div>
+<h2>Start here</h2><div class="grid"><a class="card" href="Plugin.html"><strong>Plugin lifecycle</strong><br><span class="muted">Base plugin class</span></a><a class="card" href="PluginLoader.html"><strong>Plugin loader</strong><br><span class="muted">Registration and dispatch</span></a><a class="card" href="PluginListener.html"><strong>Listener callbacks</strong><br><span class="muted">Methods plugins override</span></a><a class="card" href="hooks.html"><strong>Hooks</strong><br><span class="muted">50 binary-verified hook constants</span></a></div>
+<h2>API classes</h2><div class="grid"><a class="card" data-name="ban" href="Ban.html"><span class="badge">class</span><br><strong>Ban</strong></a>
+<a class="card" data-name="bansystem" href="BanSystem.html"><span class="badge">class</span><br><strong>BanSystem</strong></a>
+<a class="card" data-name="baseentity" href="BaseEntity.html"><span class="badge">class</span><br><strong>BaseEntity</strong></a>
+<a class="card" data-name="basevehicle" href="BaseVehicle.html"><span class="badge">class</span><br><strong>BaseVehicle</strong></a>
+<a class="card" data-name="block" href="Block.html"><span class="badge">class</span><br><strong>Block</strong></a>
+<a class="card" data-name="block.face" href="Block.Face.html"><span class="badge">enum</span><br><strong>Block.Face</strong></a>
+<a class="card" data-name="block.type" href="Block.Type.html"><span class="badge">enum</span><br><strong>Block.Type</strong></a>
+<a class="card" data-name="blockaction" href="BlockAction.html"><span class="badge">class</span><br><strong>BlockAction</strong></a>
+<a class="card" data-name="blockstairs" href="BlockStairs.html"><span class="badge">class</span><br><strong>BlockStairs</strong></a>
+<a class="card" data-name="chest" href="Chest.html"><span class="badge">class</span><br><strong>Chest</strong></a>
+<a class="card" data-name="chunk" href="Chunk.html"><span class="badge">class</span><br><strong>Chunk</strong></a>
+<a class="card" data-name="colors" href="Colors.html"><span class="badge">class</span><br><strong>Colors</strong></a>
+<a class="card" data-name="complexblock" href="ComplexBlock.html"><span class="badge">interface</span><br><strong>ComplexBlock</strong></a>
+<a class="card" data-name="datasource" href="DataSource.html"><span class="badge">class</span><br><strong>DataSource</strong></a>
+<a class="card" data-name="delayedtask" href="DelayedTask.html"><span class="badge">class</span><br><strong>DelayedTask</strong></a>
+<a class="card" data-name="enumcreaturetype" href="EnumCreatureType.html"><span class="badge">enum</span><br><strong>EnumCreatureType</strong></a>
+<a class="card" data-name="flatfilesource" href="FlatFileSource.html"><span class="badge">class</span><br><strong>FlatFileSource</strong></a>
+<a class="card" data-name="furnace" href="Furnace.html"><span class="badge">class</span><br><strong>Furnace</strong></a>
+<a class="card" data-name="group" href="Group.html"><span class="badge">class</span><br><strong>Group</strong></a>
+<a class="card" data-name="hitblox" href="HitBlox.html"><span class="badge">class</span><br><strong>HitBlox</strong></a>
+<a class="card" data-name="humanentity" href="HumanEntity.html"><span class="badge">class</span><br><strong>HumanEntity</strong></a>
+<a class="card" data-name="inventory" href="Inventory.html"><span class="badge">class</span><br><strong>Inventory</strong></a>
+<a class="card" data-name="inventory.type" href="Inventory.Type.html"><span class="badge">enum</span><br><strong>Inventory.Type</strong></a>
+<a class="card" data-name="item" href="Item.html"><span class="badge">class</span><br><strong>Item</strong></a>
+<a class="card" data-name="item.type" href="Item.Type.html"><span class="badge">enum</span><br><strong>Item.Type</strong></a>
+<a class="card" data-name="itemarray" href="ItemArray.html"><span class="badge">class</span><br><strong>ItemArray</strong></a>
+<a class="card" data-name="itementity" href="ItemEntity.html"><span class="badge">class</span><br><strong>ItemEntity</strong></a>
+<a class="card" data-name="kit" href="Kit.html"><span class="badge">class</span><br><strong>Kit</strong></a>
+<a class="card" data-name="livingentity" href="LivingEntity.html"><span class="badge">class</span><br><strong>LivingEntity</strong></a>
+<a class="card" data-name="location" href="Location.html"><span class="badge">class</span><br><strong>Location</strong></a>
+<a class="card" data-name="main" href="Main.html"><span class="badge">class</span><br><strong>Main</strong></a>
+<a class="card" data-name="minecart" href="Minecart.html"><span class="badge">class</span><br><strong>Minecart</strong></a>
+<a class="card" data-name="minecart.type" href="Minecart.Type.html"><span class="badge">enum</span><br><strong>Minecart.Type</strong></a>
+<a class="card" data-name="mob" href="Mob.html"><span class="badge">class</span><br><strong>Mob</strong></a>
+<a class="card" data-name="mobspawner" href="MobSpawner.html"><span class="badge">class</span><br><strong>MobSpawner</strong></a>
+<a class="card" data-name="myclassloader" href="MyClassLoader.html"><span class="badge">class</span><br><strong>MyClassLoader</strong></a>
+<a class="card" data-name="mysqlsource" href="MySQLSource.html"><span class="badge">class</span><br><strong>MySQLSource</strong></a>
+<a class="card" data-name="player" href="Player.html"><span class="badge">class</span><br><strong>Player</strong></a>
+<a class="card" data-name="plugin" href="Plugin.html"><span class="badge">class</span><br><strong>Plugin</strong></a>
+<a class="card" data-name="plugininterface" href="PluginInterface.html"><span class="badge">interface</span><br><strong>PluginInterface</strong></a>
+<a class="card" data-name="pluginlistener" href="PluginListener.html"><span class="badge">class</span><br><strong>PluginListener</strong></a>
+<a class="card" data-name="pluginlistener.priority" href="PluginListener.Priority.html"><span class="badge">enum</span><br><strong>PluginListener.Priority</strong></a>
+<a class="card" data-name="pluginloader" href="PluginLoader.html"><span class="badge">class</span><br><strong>PluginLoader</strong></a>
+<a class="card" data-name="pluginloader.hook" href="PluginLoader.Hook.html"><span class="badge">enum</span><br><strong>PluginLoader.Hook</strong></a>
+<a class="card" data-name="pluginloader.hookresult" href="PluginLoader.HookResult.html"><span class="badge">enum</span><br><strong>PluginLoader.HookResult</strong></a>
+<a class="card" data-name="pluginregisteredlistener" href="PluginRegisteredListener.html"><span class="badge">class</span><br><strong>PluginRegisteredListener</strong></a>
+<a class="card" data-name="propertiesfile" href="PropertiesFile.html"><span class="badge">class</span><br><strong>PropertiesFile</strong></a>
+<a class="card" data-name="server" href="Server.html"><span class="badge">class</span><br><strong>Server</strong></a>
+<a class="card" data-name="sign" href="Sign.html"><span class="badge">class</span><br><strong>Sign</strong></a>
+<a class="card" data-name="slime" href="Slime.html"><span class="badge">class</span><br><strong>Slime</strong></a>
+<a class="card" data-name="texthelper" href="TextHelper.html"><span class="badge">class</span><br><strong>TextHelper</strong></a>
+<a class="card" data-name="threadpreloginchecks" href="ThreadPreLoginChecks.html"><span class="badge">class</span><br><strong>ThreadPreLoginChecks</strong></a>
+<a class="card" data-name="warp" href="Warp.html"><span class="badge">class</span><br><strong>Warp</strong></a>
+<a class="card" data-name="wrappedtask" href="WrappedTask.html"><span class="badge">class</span><br><strong>WrappedTask</strong></a></div></main></div><script src="script.js"></script></body></html>

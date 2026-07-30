@@ -1,0 +1,1 @@
+﻿document.addEventListener("input",e=>{if(e.target.id!=="filter")return;const q=e.target.value.toLowerCase();document.querySelectorAll("[data-name]").forEach(x=>x.hidden=!x.dataset.name.includes(q))})

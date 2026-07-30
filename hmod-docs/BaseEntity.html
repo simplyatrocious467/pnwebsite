@@ -1,0 +1,112 @@
+﻿<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>BaseEntity - hMod Alpha 1.1.2</title><link rel="stylesheet" href="stylesheet.css"></head><body><div class="layout"><aside><a class="brand" href="index.html">hMod API</a><div class="version">Alpha 1.1.2</div>
+<input id="filter" type="search" placeholder="Filter API classes...">
+<a class="class-link" href="hooks.html">Hook reference</a>
+<div class="nav-title">Plugin-facing API (54)</div><a class="class-link" data-name="ban" href="Ban.html">Ban</a>
+<a class="class-link" data-name="bansystem" href="BanSystem.html">BanSystem</a>
+<a class="class-link" data-name="baseentity" href="BaseEntity.html">BaseEntity</a>
+<a class="class-link" data-name="basevehicle" href="BaseVehicle.html">BaseVehicle</a>
+<a class="class-link" data-name="block" href="Block.html">Block</a>
+<a class="class-link" data-name="block.face" href="Block.Face.html">Block.Face</a>
+<a class="class-link" data-name="block.type" href="Block.Type.html">Block.Type</a>
+<a class="class-link" data-name="blockaction" href="BlockAction.html">BlockAction</a>
+<a class="class-link" data-name="blockstairs" href="BlockStairs.html">BlockStairs</a>
+<a class="class-link" data-name="chest" href="Chest.html">Chest</a>
+<a class="class-link" data-name="chunk" href="Chunk.html">Chunk</a>
+<a class="class-link" data-name="colors" href="Colors.html">Colors</a>
+<a class="class-link" data-name="complexblock" href="ComplexBlock.html">ComplexBlock</a>
+<a class="class-link" data-name="datasource" href="DataSource.html">DataSource</a>
+<a class="class-link" data-name="delayedtask" href="DelayedTask.html">DelayedTask</a>
+<a class="class-link" data-name="enumcreaturetype" href="EnumCreatureType.html">EnumCreatureType</a>
+<a class="class-link" data-name="flatfilesource" href="FlatFileSource.html">FlatFileSource</a>
+<a class="class-link" data-name="furnace" href="Furnace.html">Furnace</a>
+<a class="class-link" data-name="group" href="Group.html">Group</a>
+<a class="class-link" data-name="hitblox" href="HitBlox.html">HitBlox</a>
+<a class="class-link" data-name="humanentity" href="HumanEntity.html">HumanEntity</a>
+<a class="class-link" data-name="inventory" href="Inventory.html">Inventory</a>
+<a class="class-link" data-name="inventory.type" href="Inventory.Type.html">Inventory.Type</a>
+<a class="class-link" data-name="item" href="Item.html">Item</a>
+<a class="class-link" data-name="item.type" href="Item.Type.html">Item.Type</a>
+<a class="class-link" data-name="itemarray" href="ItemArray.html">ItemArray</a>
+<a class="class-link" data-name="itementity" href="ItemEntity.html">ItemEntity</a>
+<a class="class-link" data-name="kit" href="Kit.html">Kit</a>
+<a class="class-link" data-name="livingentity" href="LivingEntity.html">LivingEntity</a>
+<a class="class-link" data-name="location" href="Location.html">Location</a>
+<a class="class-link" data-name="main" href="Main.html">Main</a>
+<a class="class-link" data-name="minecart" href="Minecart.html">Minecart</a>
+<a class="class-link" data-name="minecart.type" href="Minecart.Type.html">Minecart.Type</a>
+<a class="class-link" data-name="mob" href="Mob.html">Mob</a>
+<a class="class-link" data-name="mobspawner" href="MobSpawner.html">MobSpawner</a>
+<a class="class-link" data-name="myclassloader" href="MyClassLoader.html">MyClassLoader</a>
+<a class="class-link" data-name="mysqlsource" href="MySQLSource.html">MySQLSource</a>
+<a class="class-link" data-name="player" href="Player.html">Player</a>
+<a class="class-link" data-name="plugin" href="Plugin.html">Plugin</a>
+<a class="class-link" data-name="plugininterface" href="PluginInterface.html">PluginInterface</a>
+<a class="class-link" data-name="pluginlistener" href="PluginListener.html">PluginListener</a>
+<a class="class-link" data-name="pluginlistener.priority" href="PluginListener.Priority.html">PluginListener.Priority</a>
+<a class="class-link" data-name="pluginloader" href="PluginLoader.html">PluginLoader</a>
+<a class="class-link" data-name="pluginloader.hook" href="PluginLoader.Hook.html">PluginLoader.Hook</a>
+<a class="class-link" data-name="pluginloader.hookresult" href="PluginLoader.HookResult.html">PluginLoader.HookResult</a>
+<a class="class-link" data-name="pluginregisteredlistener" href="PluginRegisteredListener.html">PluginRegisteredListener</a>
+<a class="class-link" data-name="propertiesfile" href="PropertiesFile.html">PropertiesFile</a>
+<a class="class-link" data-name="server" href="Server.html">Server</a>
+<a class="class-link" data-name="sign" href="Sign.html">Sign</a>
+<a class="class-link" data-name="slime" href="Slime.html">Slime</a>
+<a class="class-link" data-name="texthelper" href="TextHelper.html">TextHelper</a>
+<a class="class-link" data-name="threadpreloginchecks" href="ThreadPreLoginChecks.html">ThreadPreLoginChecks</a>
+<a class="class-link" data-name="warp" href="Warp.html">Warp</a>
+<a class="class-link" data-name="wrappedtask" href="WrappedTask.html">WrappedTask</a></aside><main><div class="eyebrow">class</div><h1>BaseEntity</h1><div class="signature">public class BaseEntity {</div><h2>Public members</h2><div class="member"><code>public BaseEntity();</code></div>
+<div class="member"><code>public BaseEntity(dj);</code></div>
+<div class="member"><code>public int getId();</code></div>
+<div class="member"><code>public void teleportTo(double, double, double, float, float);</code></div>
+<div class="member"><code>public void teleportTo(BaseEntity);</code></div>
+<div class="member"><code>public void teleportTo(Location);</code></div>
+<div class="member"><code>public double getX();</code></div>
+<div class="member"><code>public void setX(double);</code></div>
+<div class="member"><code>public double getY();</code></div>
+<div class="member"><code>public void setY(double);</code></div>
+<div class="member"><code>public double getZ();</code></div>
+<div class="member"><code>public void setZ(double);</code></div>
+<div class="member"><code>public float getPitch();</code></div>
+<div class="member"><code>public void setPitch(float);</code></div>
+<div class="member"><code>public float getRotation();</code></div>
+<div class="member"><code>public void setRotation(float);</code></div>
+<div class="member"><code>public Location getLocation();</code></div>
+<div class="member"><code>public double getMotionX();</code></div>
+<div class="member"><code>public void setMotionX(double);</code></div>
+<div class="member"><code>public double getMotionY();</code></div>
+<div class="member"><code>public void setMotionY(double);</code></div>
+<div class="member"><code>public double getMotionZ();</code></div>
+<div class="member"><code>public void setMotionZ(double);</code></div>
+<div class="member"><code>public void setMotion(double, double, double);</code></div>
+<div class="member"><code>public dj getEntity();</code></div>
+<div class="member"><code>public void killEntity();</code></div>
+<div class="member"><code>public boolean isTouchingCactus();</code></div>
+<div class="member"><code>public boolean isUnderWater();</code></div>
+<div class="member"><code>public boolean isMob();</code></div>
+<div class="member"><code>public static boolean isMob(dj);</code></div>
+<div class="member"><code>public boolean isAnimal();</code></div>
+<div class="member"><code>public static boolean isAnimal(dj);</code></div>
+<div class="member"><code>public boolean isPlayer();</code></div>
+<div class="member"><code>public static boolean isPlayer(dj);</code></div>
+<div class="member"><code>public Player getPlayer();</code></div>
+<div class="member"><code>public boolean isLiving();</code></div>
+<div class="member"><code>public static boolean isLiving(dj);</code></div>
+<div class="member"><code>public boolean isMinecart();</code></div>
+<div class="member"><code>public Minecart getMinecart();</code></div>
+<div class="member"><code>public boolean attachedToEntity();</code></div>
+<div class="member"><code>public BaseEntity getRiddenByEntity();</code></div>
+<div class="member"><code>public BaseEntity getRidingEntity();</code></div>
+<div class="member"><code>public void attach(BaseEntity);</code></div>
+<div class="member"><code>public boolean getOnGround();</code></div>
+<div class="member"><code>public void setOnGround(boolean);</code></div>
+<div class="member"><code>public boolean isDead();</code></div>
+<div class="member"><code>public void spawn();</code></div>
+<div class="member"><code>public void spawn(LivingEntity);</code></div>
+<div class="member"><code>public int getBaseAirTicks();</code></div>
+<div class="member"><code>public void setBaseAirTicks(int);</code></div>
+<div class="member"><code>public int getNoDamageTicks();</code></div>
+<div class="member"><code>public void setNoDamageTicks(int);</code></div>
+<div class="member"><code>public int getAirTicks();</code></div>
+<div class="member"><code>public void setAirTicks(int);</code></div>
+<div class="member"><code>public int getFireTicks();</code></div>
+<div class="member"><code>public void setFireTicks(int);</code></div></main></div><script src="script.js"></script></body></html>
