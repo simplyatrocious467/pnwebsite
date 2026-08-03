@@ -320,6 +320,165 @@ code {
     font-size: 0.93em;
 }
 
+
+/* Staff section */
+.staff-heading {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.staff-heading h2 {
+    margin-bottom: 7px;
+}
+
+.staff-heading p {
+    max-width: 720px;
+    margin: 0;
+    color: var(--muted);
+}
+
+.staff-heading .small-button {
+    flex-shrink: 0;
+    margin-bottom: 4px;
+}
+
+.staff-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.staff-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    min-width: 0;
+    padding: 17px;
+    border: 1px solid var(--border);
+    border-left: 3px solid #4e657d;
+    background: var(--surface);
+}
+
+.staff-card:hover {
+    border-color: #49627d;
+    background: var(--surface-soft);
+}
+
+.owner-card {
+    border-left-color: #aa0000;
+}
+
+.staff-avatar {
+    width: 72px;
+    height: 72px;
+    flex: 0 0 72px;
+    border: 2px solid #4b627a;
+    background: #07101a;
+    image-rendering: pixelated;
+    object-fit: cover;
+}
+
+.owner-card .staff-avatar {
+    border-color: #aa0000;
+}
+
+.staff-card h3 {
+    margin: 0 0 8px;
+    overflow-wrap: anywhere;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+.staff-card p {
+    margin: 10px 0 0;
+    color: #aebdcb;
+    font-size: 13px;
+    line-height: 1.45;
+}
+
+.staff-ranks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.rank {
+    display: inline-flex;
+    padding: 3px 7px;
+    border: 1px solid var(--rank-border);
+    border-radius: 3px;
+    background: var(--rank-background);
+    color: var(--rank-name);
+    font-family: "Courier New", Courier, monospace;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 1.35;
+    white-space: nowrap;
+}
+
+.rank span {
+    color: var(--rank-brackets);
+}
+
+.owner {
+    --rank-brackets: #000000;
+    --rank-name: #aa0000;
+    --rank-border: #aa0000;
+    --rank-background: rgba(170, 0, 0, 0.18);
+}
+
+/* Keeps the black owner brackets visible against the dark background. */
+.owner span {
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.85);
+}
+
+.administrator {
+    --rank-brackets: #555555;
+    --rank-name: #aa0000;
+    --rank-border: #aa0000;
+    --rank-background: rgba(170, 0, 0, 0.14);
+}
+
+.developer,
+.senior-mod {
+    --rank-brackets: #aa00aa;
+    --rank-name: #ff55ff;
+    --rank-border: #aa00aa;
+    --rank-background: rgba(170, 0, 170, 0.16);
+}
+
+.moderator {
+    --rank-brackets: #55ffff;
+    --rank-name: #00aaaa;
+    --rank-border: #00aaaa;
+    --rank-background: rgba(0, 170, 170, 0.16);
+}
+
+.helper {
+    --rank-brackets: #00aa00;
+    --rank-name: #55ff55;
+    --rank-border: #00aa00;
+    --rank-background: rgba(0, 170, 0, 0.16);
+}
+
+.trial-helper {
+    --rank-brackets: #55ff55;
+    --rank-name: #00aa00;
+    --rank-border: #00aa00;
+    --rank-background: rgba(0, 170, 0, 0.12);
+}
+
+/* Event Leader is a staff duty rather than an in-game rank. */
+.event-leader {
+    --rank-brackets: #ffaa00;
+    --rank-name: #ffff55;
+    --rank-border: #ffaa00;
+    --rank-background: rgba(255, 170, 0, 0.14);
+}
+
 /* Community */
 .community-layout {
     display: grid;
@@ -424,7 +583,8 @@ footer a {
     .about-layout,
     .community-layout,
     .join-videos,
-    .rules-list {
+    .rules-list,
+    .staff-grid {
         grid-template-columns: 1fr;
     }
 
@@ -467,6 +627,21 @@ footer a {
 
     .rules-group {
         padding: 18px;
+    }
+
+
+    .staff-heading {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 13px;
+    }
+
+    .staff-heading .small-button {
+        margin-bottom: 0;
+    }
+
+    .staff-card {
+        padding: 14px;
     }
 
     .community-gallery {
